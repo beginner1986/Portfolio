@@ -3,16 +3,39 @@
 <head>
     <meta charset="utf-8">
     <title>Hello, World!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>John Smith, Front-end developer</h1>
-    <h2>About me</h2>
-    <img src="../res/person.png" alt="photo">
-    <p>My biography.</p>
-    <h2>Portfolio</h2>
-    <img src="../res/project1.png" alt=""><br>
-    <label>Flashcards</label><br>
-    <img src="../res/project2.png" alt=""><br>
-    <label>Virtual Piano</label>
+    <header>
+        <h1>John Smith, Front-end developer</h1>
+        <nav>
+            <a href="#about">About me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About me</h2>
+        <img src="../res/person.png" alt="photo">
+        <p>My biography.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <img src="../res/project1.png" alt=""><br>
+        <label>Flashcards</label><br>
+        <img src="../res/project2.png" alt=""><br>
+        <label>Virtual Piano</label>
+    </section>
+
+    <section id="contacts">
+        <a href="https://github.com/"><img src="../res/github.svg" alt="github"></a>
+        <a href="https://www.facebook.com/"><img src="../res/facebook.svg" alt="facebook"></a>
+        <a href="https://twitter.com//"><img src="../res/twitter.svg" alt="twitter"></a>
+        <a href="https://www.instagram.com/"><img src="../res/instagram.svg" alt="instagram"></a>
+    </section>
+
+    <footer>Made by Beginner in 2021 ;)</footer>
 </body>
 </html>

@@ -1,0 +1,16 @@
+body {
+    margin: auto;
+    width: 75%;
+}
+
+#about img {
+    width: 20%;
+}
+
+#portfolio img {
+    width: 50%;
+}
+
+#contacts img {
+    width: 10%;
+}
