@@ -66,6 +66,7 @@ h2 {
 footer {
     align-items: center;
     border: darkgray 2px solid;
+    border-top: none;
     color: darkgray;
     display: flex;
     font-size: 2em;
@@ -98,18 +99,31 @@ footer {
 
 #portfolio {
     background-color: gray;
+    color: aliceblue;
+    display: flow;
     height: 100vh;
 }
 
 #portfolio img {
     height: auto;
-    width: 50%;
+    margin-left: 25%;
+    width: 40%;
+}
+
+#portfolio p {
+    font-size: 2em;
+    margin-left: 25%;
+}
+
+#portfolio hr {
+    margin-bottom: 30px;
 }
 
 #contacts {
     align-items: center;
     background-color: darkgray;
-    border-top: #1e1010 2px solid;
+    border: #1e1010 2px solid;
+    border-bottom: none;
     display: flex;
     height: 5em;
     justify-content: center;
