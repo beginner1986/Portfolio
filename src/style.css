@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 
 * {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     margin: unset;
+    padding: unset;
 }
 
 body {
     background-color: black;
+    display: flex;
+    flex-direction: column;
     margin: auto;
     width: 75%;
 }
@@ -31,7 +35,6 @@ header nav {
 
 header nav a {
     color: darkgray;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
     padding: 10px 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -42,7 +45,7 @@ header nav a:hover {
     color: lightgray;
 }
 
-.active {
+header nav a.active {
     background: lightslategray;
     color: black;
 }
@@ -55,14 +58,64 @@ header h1 {
     position: absolute;
 }
 
+h2 {
+    font-size: 3em;
+    margin: 30px;
+}
+
+footer {
+    align-items: center;
+    border: darkgray 2px solid;
+    color: darkgray;
+    display: flex;
+    font-size: 2em;
+    height: 3em;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#about {
+    background-color: darkgray;
+    display: inline-block;
+    height: 100vh;
+}
+
 #about img {
+    float: left;
+    height: 30%;
+    margin: 15% 5% 15% 15%;
     width: 20%;
 }
 
+#about h2 {
+    margin-top: 15%;
+}
+
+#about p {
+    font-size: 1.5em;
+    margin-right: 10%;
+}
+
+#portfolio {
+    background-color: gray;
+    height: 100vh;
+}
+
 #portfolio img {
+    height: auto;
     width: 50%;
 }
 
+#contacts {
+    align-items: center;
+    background-color: darkgray;
+    border-top: #1e1010 2px solid;
+    display: flex;
+    height: 5em;
+    justify-content: center;
+}
+
 #contacts img {
+    height: auto;
     width: 10%;
 }
