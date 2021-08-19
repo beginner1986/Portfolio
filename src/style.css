@@ -63,6 +63,11 @@ h2 {
     margin: 30px;
 }
 
+h3 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
 footer {
     align-items: center;
     border: darkgray 2px solid;
@@ -73,6 +78,26 @@ footer {
     height: 3em;
     justify-content: center;
     text-transform: uppercase;
+}
+
+.window {
+    align-items: center;
+    background-color: lightgray;
+    border: black 3px solid;
+    border-radius: 50px;
+    clear: both;
+    color: black;
+    display: none;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    left: 25%;
+    opacity: 90%;
+    overflow: auto;
+    padding: unset;
+    position: fixed;
+    top: 25%;
+    width: 50vw;
 }
 
 #about {
@@ -106,17 +131,27 @@ footer {
 
 #portfolio img {
     height: auto;
-    margin-left: 25%;
-    width: 40%;
+    margin-left: 30%;
+    width: 35%;
 }
 
 #portfolio p {
     font-size: 2em;
-    margin-left: 25%;
 }
 
-#portfolio hr {
-    margin-bottom: 30px;
+#portfolio button {
+    background-color: darkolivegreen;
+    border: black 2px solid;
+    border-radius: 10px;
+    color: lightgray;
+    font-size: 2em;
+    margin: 0 0 10px 42%;
+    width: 150px;
+}
+
+#portfolio button:hover {
+    color: white;
+    border-color: white;
 }
 
 #contacts {

@@ -1,4 +1,6 @@
 configureNavBar();
+setupFlashcardsPopup();
+setupPianoPopup();
 
 function configureNavBar() {
     const navLinks = document.querySelectorAll('nav a');
@@ -12,5 +14,33 @@ function configureNavBar() {
                 }
             }
         });
+    }
+}
+
+function setupFlashcardsPopup() {
+    const flashcardsOpenBtn = document.querySelector('#flashcards-open-btn');
+    const flashcardsCloseBtn = document.querySelector('#flashcards-close-btn');
+    const flashcardsWindow = document.querySelector('#flashcards-window');
+
+    flashcardsOpenBtn.onclick = function () {
+        flashcardsWindow.style.display = 'flex';
+    };
+
+    flashcardsCloseBtn.onclick = function () {
+        flashcardsWindow.style.display = 'none';
+    }
+}
+
+function setupPianoPopup() {
+    const pianoOpenBtn = document.querySelector('#piano-open-btn');
+    const pianoCloseBtn = document.querySelector('#piano-close-btn');
+    const pianoWindow = document.querySelector('#piano-window');
+
+    pianoOpenBtn.onclick = function () {
+        pianoWindow.style.display = 'flex';
+    };
+
+    pianoCloseBtn.onclick = function () {
+        pianoWindow.style.display = 'none';
     }
 }
