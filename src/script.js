@@ -17,6 +17,16 @@ function configureNavBar() {
     }
 }
 
+function myFunction() {
+    const hamb = document.querySelector('#hamburger-links');
+
+    if (hamb.style.display === "block") {
+        hamb.style.display = "none";
+    } else {
+        hamb.style.display = "block";
+    }
+}
+
 function setupFlashcardsPopup() {
     const flashcardsOpenBtn = document.querySelector('#flashcards-open-btn');
     const flashcardsCloseBtn = document.querySelector('#flashcards-close-btn');
